@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #cde8e5;
+  overflow: scroll;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.game-decision {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 5em;
+  border: 1px solid black;
+  padding: 2em;
+}
+
+.game-decision h1 {
+  font-size: 2.5em;
+}
+
+.score {
+  margin-right: 1em;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 4em auto;
+}
+
+button {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+button img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+  scale: 1.05;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.549);
+}
+
+.message {
+  width: 100%;
+  margin: 0 auto 0;
+}
+
+.message h1 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 900;
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+
+  .game-decision {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4em;
+    border: 1px solid black;
+    padding: 1em;
+  }
+
+  .game-decision h1 {
+    font-size: 1.4em;
+    color: #4D869C;
+
+  }
+
+
+  .score h3 {
+    font-size: 1.1em;
+    color: #4D869C;
+  }
+
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    /* width: 70%; */
+    margin: 2em auto;
+  }
+
+  button {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+
+  button img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    scale: 1.05;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.549);
+  }
+  
+  .message {
+    width: 100%;
+    margin: -30px auto 0;
+  }
+  
+  .message h1 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 900;
+  }
+}
